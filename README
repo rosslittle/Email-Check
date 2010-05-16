@@ -1,0 +1,10 @@
+<h1>Email Proxy</h1>
+<p>One of the problems our company has come across is that we constantly meet
+people who offer web sites to generate leads but that they are only able
+to supply those leads to us as emails rather than programatically through
+web services or an API</p>
+<p>This means we need to use a lot of human intervention in reading these
+emails and inputting them into our CRM.  This is time wasted.</p>
+<p>This set of scripts will read email from a given account and then
+parse it given the rules that are assigned to it</p>
+<p>This is the plan... achem... </p>
