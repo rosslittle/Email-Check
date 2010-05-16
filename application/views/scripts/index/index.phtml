@@ -1,9 +1,28 @@
+<style>
+    label {
+        width: 100px;
+        display: inline-block;
+    }
+    form {
+        position: absolute;
+        height:100px;
+        width:300px;
+        display: block;
+        padding-left: 50%;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -50px;
+    }
+    </style>
+
 <?php if (!isSet(Zend_Auth::getInstance()->getIdentity()->id)) : ?>
 <form action="/auth/login" method="POST">
     <label>Username</label><input type="text" name="username" /><br />
-    <label>Password</label><input type="text" name="password" />
+    <label>Password</label><input type="password" name="password" />
 </form>
 <?php endif; ?>
 <?php if (isSet(Zend_Auth::getInstance()->getIdentity()->id)) : ?>
+<form>
 You are already logged in. <a href="/auth/logout">Logout</a>
+</form>
 <?php endif; ?>
