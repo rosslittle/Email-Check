@@ -1,4 +1,7 @@
 <style>
+    * {
+        font-family: sans-serif;
+    }
     label {
         width: 100px;
         display: inline-block;
@@ -13,6 +16,9 @@
         top: 50%;
         margin-top: -50px;
     }
+    input {
+        width: 140px;
+}
     </style>
 
 <?php if (!isSet(Zend_Auth::getInstance()->getIdentity()->id)) : ?>
